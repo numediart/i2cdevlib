@@ -103,6 +103,10 @@ THE SOFTWARE.
     #define ARDUINO 101
 #endif
 
+#if defined (ESP_PLATFORM) || defined (ESP8266)
+	#define min _min
+	#define max _max
+#endif
 
 // 1000ms default read timeout (modify with "I2Cdev::readTimeout = [ms];")
 #define I2CDEV_DEFAULT_READ_TIMEOUT     1000
