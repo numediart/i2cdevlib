@@ -5,7 +5,7 @@ Forked from https://github.com/jrowberg/i2cdevlib/tree/master/Arduino/I2Cdev
 See the original readme for more information
 
 ## Changes made
-In I2Cdev.h, add this code around line 95, after `#ifdef` section and before class declaration:
+In Arduino/I2Cdev/I2Cdev.h, add this code around line 95, after `#ifdef` section and before class declaration:
 
 ```C++
 #if defined (ESP_PLATFORM) || defined (ESP8266)
